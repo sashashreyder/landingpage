@@ -27,22 +27,25 @@
     letter-spacing: 5px;
     cursor: pointer;
     color: #f9f871;
-    font-family: "Notable", sans-serif;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
 }
 
 .line {
     height: 2px;
     background: #dcdcdc;
+    margin-left: 15px;
 }
 
 .description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-left: 20px;
     text-align: center;
     line-height: 1.5;
     max-width: 500px;
     color: #fff;
     opacity: 0.8;
+    font-family: 'Italiana', serif;
 }
 
 .skills-icons {
@@ -92,7 +95,7 @@
 .gif-container {
     position: absolute;
     top: 20px;
-    left: 475px;
+    left: 450px;
     z-index: 3;
 }
 
