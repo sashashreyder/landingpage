@@ -24,15 +24,15 @@ function HeroSection() {
         </div>
 
         <div className="skills-icons">
-          <img src="src/media/HTML5_sh.jpg" alt="HTML" />
-          <img src="src/media/CSS3.jpg" alt="CSS" />
-          <img src="src/media/JS.jpg" alt="JS" />
-          <img src="src/media/react.jpg" alt="React" />
+          <img src="https://i.postimg.cc/Qt7DbbfK/HTML5-sh.jpg" alt="HTML" />
+          <img src="https://i.postimg.cc/ZnFSkqtT/CSS3.jpg" alt="CSS" />
+          <img src="https://i.postimg.cc/5yMVkCr7/JS.jpg" alt="JS" />
+          <img src="https://i.postimg.cc/L62StjLh/react.jpg" alt="React" />
         </div>
 
         <div className="image-container">
           <img id='profilePic' src='https://i.pinimg.com/736x/b1/cc/99/b1cc9987043f82eda1963ab8ba5d03c5.jpg' alt="Profile" />
-          <img id='codePic' src='/src/media/code.png' alt="Code Background" />
+          <img id='codePic' src='https://i.postimg.cc/y6FB3LJw/code.png' alt="Code Background" />
         </div>
 
         {showGif && (
