@@ -38,7 +38,7 @@ function HeroSection() {
       {showGif && (
         <div className="gif-container">
           <img
-            src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif"
+            src="https://i.gifer.com/Ao.gif"
             alt="Greeting GIF"
             className="greeting-gif"
           />

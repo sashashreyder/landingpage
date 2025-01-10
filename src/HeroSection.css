@@ -74,16 +74,15 @@
   
   .gif-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3; /* Ensure it's on top */
+    top: 10px;
+    left: 550px;
+    z-index: 3; 
   }
   
   .greeting-gif {
-    width: 300px;
+    width: 110px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
