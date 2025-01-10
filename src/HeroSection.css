@@ -1,88 +1,219 @@
 .HeroSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.glass-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(31, 31, 42);
-    position: relative;
-  }
-  
-  .greeting {
-    display: flex;
-    justify-content: center;
-    margin-left: 40px;
-    color: rgb(235, 229, 229);
-    font-family: "Notable", sans-serif;
+    width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: #fff;
+}
+
+.greeting {
+    text-align: center;
     font-size: 90px;
     letter-spacing: 5px;
     cursor: pointer;
-  }
-  
-  .line {
-    margin-left: 40px;
-    color: #dcdcdc;
-  }
-  
-  p {
-    color: #dcdcdc;
+    color: #f9f871;
+    font-family: "Notable", sans-serif;
+}
+
+.line {
+    height: 2px;
+    background: #dcdcdc;
+}
+
+.description {
+    font-size: 1.1rem;
+    margin-left: 20px;
     text-align: center;
-    opacity: 0.7;
-    font-size: 20px;
-    margin-left: 40px;
-    max-width: 600px;
-  }
-  
-  .skills-icons {
+    line-height: 1.5;
+    max-width: 500px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.skills-icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
-    margin: 20px 0;
-  }
-  
-  .skills-icons img {
+    margin-left: 90px;
+}
+
+.skills-icons img {
     width: 50px;
     height: 50px;
     border-radius: 8px;
     transition: transform 0.3s ease-out;
-  }
-  
-  .skills-icons img:hover {
+}
+
+.skills-icons img:hover {
     transform: scale(1.1);
     opacity: 0.8;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     position: relative;
-  }
-  
-  #codePic {
-    width: 600px;
-    z-index: 1;
-    opacity: 0.5;
-  }
-  
-  #profilePic {
+}
+
+#codePic {
+    position: relative;
+    border: transparent;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    opacity: 0.1;
+    margin: 0 auto;
+}
+
+#profilePic {
     width: 350px;
-    border: 0.5px solid transparent;
-    border-radius: 200px;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  
-  .gif-container {
+    z-index: 1;
+}
+
+.gif-container {
     position: absolute;
-    top: 10px;
-    left: 550px;
-    z-index: 3; 
-  }
-  
-  .greeting-gif {
-    width: 110px;
+    top: 20px;
+    left: 475px;
+    z-index: 3;
+}
+
+.greeting-gif {
+    width: 120px;
     height: auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
+    border-radius: 100px;
+}
+
+@media (max-width: 1200px) {
+    .glass-container {
+        width: 95%;
+    }
+
+    .greeting {
+        font-size: 70px;
+        letter-spacing: 4px;
+    }
+
+    #profilePic {
+        width: 250px;
+    }
+
+    #codePic {
+        max-width: 500px;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .gif-container {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroSection {
+        flex-direction: column;
+    }
+
+    .glass-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .greeting {
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .skills-icons {
+        flex-direction: row;
+        gap: 15px;
+        margin: auto;
+    }
+
+    .skills-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #profilePic {
+        width: 250px;
+    }
+
+    #codePic {
+        max-width: 400px;
+        opacity: 0.05;
+    }
+
+    .gif-container {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .greeting-gif {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .skills-icons {
+      margin: auto;
+    }
+
+    .skills-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #profilePic {
+        width: 200px;
+    }
+
+    #codePic {
+        max-width: 300px;
+    }
+
+    .greeting-gif {
+        width: 80px;
+    }
+}
+
   
