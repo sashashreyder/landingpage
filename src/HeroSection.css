@@ -34,7 +34,7 @@
 .line {
     height: 2px;
     background: #dcdcdc;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .description {
@@ -90,19 +90,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    cursor: pointer;
 }
 
 .gif-container {
     position: absolute;
-    top: 20px;
-    left: 450px;
+    top: 18px;
+    left: 430px;
     z-index: 3;
 }
 
 .greeting-gif {
-    width: 120px;
+    width: 150px;
     height: auto;
     border-radius: 100px;
+}
+
+.other-gif-container {
+    position: absolute;
+    top: 30px;
+    left: 1070px;
+    z-index: 3;
+}
+
+.profile-gif {
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
 }
 
 @media (max-width: 1200px) {

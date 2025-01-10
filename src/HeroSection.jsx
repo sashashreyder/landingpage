@@ -3,6 +3,7 @@ import './HeroSection.css';
 
 function HeroSection() {
   const [showGif, setShowGif] = useState(false);
+  const [showOtherGif, setShowOtherGif] = useState(false);
 
   return (
     <div className='HeroSection'>
@@ -31,7 +32,13 @@ function HeroSection() {
         </div>
 
         <div className="image-container">
-          <img id='profilePic' src='https://i.pinimg.com/736x/b1/cc/99/b1cc9987043f82eda1963ab8ba5d03c5.jpg' alt="Profile" />
+          <img
+            id='profilePic'
+            src='https://i.pinimg.com/736x/b1/cc/99/b1cc9987043f82eda1963ab8ba5d03c5.jpg'
+            alt="Profile"
+            onMouseEnter={() => setShowOtherGif(true)}
+            onMouseLeave={() => setShowOtherGif(false)}
+          />
           <img id='codePic' src='https://i.postimg.cc/y6FB3LJw/code.png' alt="Code Background" />
         </div>
 
@@ -44,9 +51,20 @@ function HeroSection() {
             />
           </div>
         )}
+
+        {showOtherGif && (
+          <div className="other-gif-container">
+            <img
+              src="https://i.gifer.com/Idaz.gif" 
+              alt="Profile GIF"
+              className="profile-gif"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
 export default HeroSection;
+
