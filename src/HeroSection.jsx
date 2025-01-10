@@ -5,6 +5,13 @@ function HeroSection() {
   const [showGif, setShowGif] = useState(false);
   const [showOtherGif, setShowOtherGif] = useState(false);
 
+  const scrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight, 
+      behavior: 'smooth', 
+    });
+  };
+
   return (
     <div className='HeroSection'>
       <div className="glass-container">
@@ -62,6 +69,10 @@ function HeroSection() {
           </div>
         )}
       </div>
+      <div className="learnMore">Here is More About Me</div>
+      <img className="aboutMeArrow" src="https://i.postimg.cc/Jz7JY1sm/keyboard-double-arrow-down-52dp-FFFFFF-FILL0-wght400-GRAD0-opsz48.png" 
+           alt="arrow" 
+           onClick={scrollDown}/>
     </div>
   );
 }

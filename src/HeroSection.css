@@ -119,6 +119,34 @@
     border-radius: 20px;
 }
 
+.learnMore {
+    color: #f9f871;
+    position: absolute;
+    top:450px;
+    font-size: 55px;
+    font-family: 'Luxurious Script', cursive;
+}
+
+.aboutMeArrow {
+    position: absolute;
+    width: 42px;
+    top: 473px;
+    left: 910px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Keyframes for the bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Move down */
+    }
+}
+
+
 @media (max-width: 1200px) {
     .glass-container {
         width: 95%;
