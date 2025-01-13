@@ -136,16 +136,14 @@
     animation: bounce 1.5s infinite ease-in-out;
 }
 
-/* Keyframes for the bouncing animation */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px); /* Move down */
+        transform: translateY(-10px);
     }
 }
-
 
 @media (max-width: 1200px) {
     .glass-container {
@@ -172,6 +170,11 @@
     .gif-container {
         visibility: hidden;
     }
+
+    .other-gif-container {
+        visibility: hidden;
+    };
+
 }
 
 @media (max-width: 768px) {
@@ -258,6 +261,53 @@
 
     .greeting-gif {
         width: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .learnMore {
+        font-size: 55px;
+        top: 105%;
+
+    }
+    .aboutMeArrow {
+        position: fixed;
+        width: 36px;
+        top: 115%;
+        left: 790px;
+    }
+}
+@media (max-width: 1024px) {
+    .learnMore {
+        font-size: 45px;
+        top: 105%;
+    }
+    .aboutMeArrow {
+        width: 36px;
+        top: 105%;
+    }
+}
+
+@media (max-width: 768px) {
+    .learnMore {
+        font-size: 35px;
+        top: 105%;
+    }
+    .aboutMeArrow {
+        width: 30px;
+        top: 105%;
+    }
+}
+
+/* Extra small screens (max-width: 576px) */
+@media (max-width: 577px) {
+    .learnMore {
+        font-size: 25px;
+        top: 105%;
+    }
+    .aboutMeArrow {
+        width: 25px;
+        top: 50%;
     }
 }
 
