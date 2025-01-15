@@ -299,7 +299,6 @@
     }
 }
 
-/* Extra small screens (max-width: 576px) */
 @media (max-width: 577px) {
     .learnMore {
         font-size: 25px;
