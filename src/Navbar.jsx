@@ -5,11 +5,8 @@ function Navbar() {
     return (
         <div className="navbar-column">
             <a href="#about" className="nav-icon">
-  <img
-    src="https://i.postimg.cc/W4Qq95wM/cruelty-free-60dp-FFFFFF-FILL0-wght400-GRAD0-opsz48.png"
-    alt="About"
-  />
-</a>
+              <img src="https://i.postimg.cc/bvTPQzrs/cruelty-free-60dp-FFFFFF-FILL0-wght400-GRAD0-opsz48.png" alt="About" />
+            </a>
             <a href="#projects" className="nav-icon">
                 <img src="https://i.postimg.cc/rpWwpM5r/developer-mode-60dp-FFFFFF-FILL0-wght400-GRAD0-opsz48.png" alt="Projects" />
             </a>
