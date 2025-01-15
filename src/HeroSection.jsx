@@ -25,7 +25,7 @@ function HeroSection() {
           </h1>
           <hr className="line" />
           <p className='description'>
-            I’m Sasha, a junior frontend developer who loves coding and learning new things every day.
+            I’m Sasha, a frontend developer who loves coding and learning new things every day.
             I’m also into design, always looking for fresh ideas and keeping up with the latest trends.
             I work well with others and believe good communication is key to any great project.
           </p>

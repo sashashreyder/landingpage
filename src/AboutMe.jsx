@@ -6,9 +6,7 @@ function AboutMe() {
             <div className="bubble-container-rounded1">
                 <div className='text-container-aboutme'>
                     <p className='characteristic1'>
-                     Traveling feeds my soul 
-                     (and my camera roll). 
-                     Exploring cultures is my cardio!
+                     Bla Bla Bla
                     </p>
                 </div>
             </div>
