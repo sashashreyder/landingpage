@@ -4,21 +4,21 @@
     justify-content: center;
     align-items: center;
     position: relative;
-}
+}   
 
 .glass-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 90%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: space-around;
+    width: 85%;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     color: #fff;
+    flex-wrap: wrap;
+    padding: 25px;
 }
 
 .greeting {
@@ -29,17 +29,16 @@
     color: #f9f871;
     font-family: 'Italiana', serif;
     text-transform: uppercase;
+    margin: 10px;
 }
 
 .line {
     height: 2px;
     background: #dcdcdc;
-    margin-left: 20px;
 }
 
 .description {
     font-size: 1.3rem;
-    margin-left: 20px;
     text-align: center;
     line-height: 1.5;
     max-width: 500px;
@@ -52,7 +51,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: 90px;
 }
 
 .skills-icons img {
@@ -69,26 +67,13 @@
 
 .image-container {
     position: relative;
-}
-
-#codePic {
-    position: relative;
-    border: transparent;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    opacity: 0.1;
-    margin: 0 auto;
+    
 }
 
 #profilePic {
-    width: 350px;
+    width: 250px;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     z-index: 1;
     cursor: pointer;
 }
@@ -124,7 +109,6 @@
     position: absolute;
     top:450px;
     font-size: 55px;
-    font-family: 'Luxurious Script', cursive;
 }
 
 .aboutMeArrow {
@@ -147,7 +131,7 @@
 
 @media (max-width: 1200px) {
     .glass-container {
-        width: 95%;
+        color: #f9f871; /*jakdjkjfwlqa*/
     }
 
     .greeting {
@@ -157,10 +141,6 @@
 
     #profilePic {
         width: 250px;
-    }
-
-    #codePic {
-        max-width: 500px;
     }
 
     .description {
@@ -177,7 +157,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     .HeroSection {
         flex-direction: column;
     }
@@ -188,23 +168,22 @@
     }
 
     .greeting {
-        font-size: 60px;
+        font-size: 70px;
         letter-spacing: 3px;
     }
 
     .line {
-        width: 80%;
+        margin: 15px;
     }
 
     .description {
-        font-size: 0.9rem;
-        max-width: 90%;
+        font-size: 1rem;
     }
 
     .skills-icons {
         flex-direction: row;
         gap: 15px;
-        margin: auto;
+        margin-bottom: 15px;
     }
 
     .skills-icons img {
@@ -234,16 +213,11 @@
 
 @media (max-width: 480px) {
     .greeting {
-        font-size: 50px;
         letter-spacing: 2px;
     }
 
     .description {
-        font-size: 0.8rem;
-    }
-
-    .skills-icons {
-      margin: auto;
+        font-size: 1rem;
     }
 
     .skills-icons img {

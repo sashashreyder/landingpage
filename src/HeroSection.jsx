@@ -46,7 +46,6 @@ function HeroSection() {
             onMouseEnter={() => setShowOtherGif(true)}
             onMouseLeave={() => setShowOtherGif(false)}
           />
-          <img id='codePic' src='https://i.postimg.cc/y6FB3LJw/code.png' alt="Code Background" />
         </div>
 
         {showGif && (

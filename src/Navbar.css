@@ -1,7 +1,5 @@
 .navbar-column {
     position: fixed;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 60px;
     display: flex;
@@ -13,7 +11,7 @@
 }
 
 .nav-icon {
-    margin: 15px 0;
+    margin: 18px 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
