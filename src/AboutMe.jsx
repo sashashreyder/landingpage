@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './AboutMe.css';
+import Portfolio from './Portfolio';
 
 function AboutMe() {
     const [expandedBoxes, setExpandedBoxes] = useState([false, false, false, false]);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    const nextSectionRef = useRef(null);
 
     useEffect(() => {
         const handleResize = () => {
@@ -23,6 +26,12 @@ function AboutMe() {
         const updatedBoxes = [...expandedBoxes];
         updatedBoxes[index] = !updatedBoxes[index];
         setExpandedBoxes(updatedBoxes);
+    };
+
+    const scrollToNextSection = () => {
+        if (nextSectionRef.current) {
+            nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     const contentData = [
@@ -61,48 +70,56 @@ function AboutMe() {
     ];
 
     return (
-        <div className="AboutMe">
-            <div className="background-container"></div>
-            <div className="text-container-aboutme">
-                <div className="handwriting-container">
-                    <span className="handwriting-text">Let's get acquainted!</span>
+        <>
+            <div className="AboutMe">
+                <div className="background-container"></div>
+                <div className="text-container-aboutme">
+                    <div className="handwriting-container">
+                        <span className="handwriting-text">Let's get acquainted!</span>
+                    </div>
+                </div>
+
+                <div className="button-container">
+                    <button className="skipthestory" onClick={scrollToNextSection}>
+                        Skip My Story 🥺
+                    </button>
+                </div>
+
+                <div className="content-boxes">
+                    {contentData.map((data, index) => (
+                        <div
+                            className={`content-box ${data.imageClass.includes("right") ? "reverse" : ""} ${
+                                expandedBoxes[index] ? "expanded" : ""
+                            }`}
+                            key={index}
+                        >
+                            <div className={`content-image ${data.imageClass}`}></div>
+                            <div className="content-text">
+                                <h3>{data.title}</h3>
+                                {(!isSmallScreen || expandedBoxes[index]) && <p>{data.content}</p>}
+                            </div>
+                            {isSmallScreen && (
+                                <button
+                                    className="toggle-btn"
+                                    onClick={() => toggleBox(index)}
+                                >
+                                    {expandedBoxes[index] ? "▲" : "▼"}
+                                </button>
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
 
-            <div className='button-container'>
-            <button className='skipthestory'>Skip My Story 🥺</button>
+            <div ref={nextSectionRef}>
+                <Portfolio />
             </div>
-
-            <div className="content-boxes">
-                {contentData.map((data, index) => (
-                    <div
-                        className={`content-box ${data.imageClass.includes("right") ? "reverse" : ""} ${
-                            expandedBoxes[index] ? "expanded" : ""
-                        }`}
-                        key={index}
-                    >
-                        <div className={`content-image ${data.imageClass}`}></div>
-                        <div className="content-text">
-                            <h3>{data.title}</h3>
-                            {/* Conditionally render the content */}
-                            {(!isSmallScreen || expandedBoxes[index]) && <p>{data.content}</p>}
-                        </div>
-                        {isSmallScreen && (
-                            <button
-                                className="toggle-btn"
-                                onClick={() => toggleBox(index)}
-                            >
-                                {expandedBoxes[index] ? "▲" : "▼"}
-                            </button>
-                        )}
-                    </div>
-                ))}
-            </div>
-        </div>
+        </>
     );
 }
 
 export default AboutMe;
+
 
 
 
