@@ -80,13 +80,13 @@
 
 .gif-container {
     position: absolute;
-    top: 3px;
+    top: 9px;
     left: 480px;
     z-index: 3;
 }
 
 .greeting-gif {
-    width: 150px;
+    width: 130px;
     height: auto;
     border-radius: 100px;
 }
@@ -104,15 +104,6 @@
     border-radius: 20px;
 }
 
-/* .aboutMeArrow {
-    position: absolute;
-    width: 42px;
-    top: 473px;
-    left: 910px;
-    cursor: pointer;
-    animation: bounce 1.5s infinite ease-in-out;
-} */
-
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -124,7 +115,7 @@
 
 @media (max-width: 1200px) {
     .glass-container {
-        color: #ededb9; /*jakdjkjfwlqa*/
+        color: #ededb9; 
     }
 
     .greeting {
