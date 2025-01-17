@@ -10,10 +10,8 @@ function AboutMe() {
             setIsSmallScreen(window.innerWidth < 750);
         };
 
-        // Initial check for screen size
         handleResize();
 
-        // Add event listener for window resize
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -69,6 +67,10 @@ function AboutMe() {
                 <div className="handwriting-container">
                     <span className="handwriting-text">Let's get acquainted!</span>
                 </div>
+            </div>
+
+            <div className='button-container'>
+            <button className='skipthestory'>Skip My Story 🥺</button>
             </div>
 
             <div className="content-boxes">

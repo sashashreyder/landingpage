@@ -15,7 +15,6 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    color: #fff;
     flex-wrap: wrap;
     padding: 25px;
 }
@@ -25,7 +24,7 @@
     font-size: 90px;
     letter-spacing: 5px;
     cursor: pointer;
-    color: #f9f871;
+    color: #ceb28a;
     font-family: 'Italiana', serif;
     text-transform: uppercase;
     margin: 10px;
@@ -38,7 +37,7 @@
 }
 
 .description {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     line-height: 1.5;
     max-width: 500px;
@@ -116,6 +115,7 @@
 @media (max-width: 1200px) {
     .glass-container {
         color: #ededb9; 
+        gap: 10px;
     }
 
     .greeting {
@@ -128,7 +128,7 @@
     }
 
     .description {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
     }
 
     .gif-container {
@@ -195,6 +195,7 @@
 
     #profilePic {
         width: 250px;
+        margin: 5px;
     }
 
     #codePic {
