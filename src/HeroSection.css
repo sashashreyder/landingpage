@@ -80,8 +80,8 @@
 
 .gif-container {
     position: absolute;
-    top: 18px;
-    left: 430px;
+    top: 3px;
+    left: 480px;
     z-index: 3;
 }
 
@@ -148,13 +148,30 @@
     }
 
     .gif-container {
-        visibility: hidden;
+        position: fixed;
+        top: 15px;
+        left: 415px;
+    }
+
+    .greeting-gif {
+        width: 120px;
     }
 
     .other-gif-container {
         visibility: hidden;
-    };
+    }
 
+    .learnMore {
+        font-size: 55px;
+        top: 105%;
+    }
+
+    .aboutMeArrow {
+        position: fixed;
+        width: 36px;
+        top: 115%;
+        left: 790px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -202,12 +219,25 @@
 
     .gif-container {
         top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 65%;
     }
 
     .greeting-gif {
         width: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+    .gif-container {
+        top: 10px;
+        left: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .gif-container {
+        top: 10px;
+        left: 75%;
     }
 }
 
@@ -229,58 +259,18 @@
         width: 200px;
     }
 
-    #codePic {
-        max-width: 300px;
-    }
-
     .greeting-gif {
-        width: 80px;
+        width: 60px;
     }
 }
 
-@media (max-width: 1200px) {
-    .learnMore {
-        font-size: 55px;
-        top: 105%;
-
+@media (max-width: 440px) {
+    .greeting-gif {
+        width: 60px;
     }
-    .aboutMeArrow {
-        position: fixed;
-        width: 36px;
-        top: 115%;
-        left: 790px;
-    }
-}
-@media (max-width: 1024px) {
-    .learnMore {
-        font-size: 45px;
-        top: 105%;
-    }
-    .aboutMeArrow {
-        width: 36px;
-        top: 105%;
-    }
-}
-
-@media (max-width: 768px) {
-    .learnMore {
-        font-size: 35px;
-        top: 105%;
-    }
-    .aboutMeArrow {
-        width: 30px;
-        top: 105%;
-    }
-}
-
-@media (max-width: 577px) {
-    .learnMore {
-        font-size: 25px;
-        top: 105%;
-    }
-    .aboutMeArrow {
-        width: 25px;
-        top: 50%;
+    .gif-container {
+        top: 10px;
+        left: 260px;
     }
 }
 
