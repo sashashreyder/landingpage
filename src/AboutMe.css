@@ -1,4 +1,5 @@
 .AboutMe {
+    height: 100%;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -151,6 +152,10 @@
 }
 
 @media (max-width: 750px) {
+
+    .AboutMe {
+        margin-bottom: 30px;
+    }
 
     .skipthestory {
         font-size: 0.9rem; 

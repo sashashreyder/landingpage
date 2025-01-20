@@ -164,6 +164,7 @@
         margin: 40px;
     }
 
+
     .glass-container {
         flex-direction: column;
         padding: 1rem;
@@ -179,7 +180,7 @@
     }
 
     .description {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .skills-icons {

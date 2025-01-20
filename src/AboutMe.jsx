@@ -111,7 +111,7 @@ function AboutMe() {
                 </div>
             </div>
 
-            <div ref={nextSectionRef}>
+            <div ref={nextSectionRef} id="Portfolio">
                 <Portfolio />
             </div>
         </>
