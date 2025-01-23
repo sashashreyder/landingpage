@@ -3,8 +3,6 @@
     padding: 0; 
     color: #fff;
     text-align: center;
-    background: linear-gradient(135deg, #1B2735, #2C5364, #0F2027, #203A43, #2C5364);
-    background-size: 400% 400%;
     animation: gradientDynamic 10s ease-in-out infinite;
 }
 
