@@ -87,6 +87,7 @@
 }
 
 .content-boxes {
+    width: 70%;
     margin: 50px;
     display: flex;
     flex-direction: column;
