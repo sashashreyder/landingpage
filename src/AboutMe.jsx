@@ -14,7 +14,6 @@ function AboutMe() {
         };
 
         handleResize();
-
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -36,6 +35,7 @@ function AboutMe() {
 
     const contentData = [
         {
+            id: "how-it-started",
             title: "How it started?",
             content: `When I was a child, my dad worked as a programmer, and his love for tech rubbed off on me. 
             By the time I was 7 (or something like that), I could assemble a computer from scratch and was experimenting with Macromedia Flash to create simple animations, explored Photoshop, 
@@ -45,6 +45,7 @@ function AboutMe() {
             imageClass: "image-left"
         },
         {
+            id: "education-early-work",
             title: "Education & Early Work",
             content: `I first studied to become an English teacher in college but later earned my bachelor's degree in journalism. During my studies, 
             I worked mostly in creative fields, often helping out at various exhibitions. After college, I landed a job at a real estate agency. 
@@ -53,6 +54,7 @@ function AboutMe() {
             imageClass: "image-right"
         },
         {
+            id: "bar-that-rocked",
             title: "The Bar That Rocked Moscow",
             content: `Following my corporate career, I took a bold step and opened Moscow's first bar specifically for metalheads. It was a dream come true—a unique space for the heavy music community, blending my passion for metal and business. I even played drums for several years, so this project was personal to me. However, the pandemic changed everything. 
             I managed to keep the bar running for two more years, but the challenges became too overwhelming. 
@@ -60,6 +62,7 @@ function AboutMe() {
             imageClass: "image-left"
         },
         {
+            id: "new-chapter",
             title: "A New Chapter",
             content: `Moving to Brazil marked a turning point in my life. After taking time to heal and reflect, I realized it was never too late to chase my childhood dream. I dove into programming with a passion I hadn’t felt in years. For the first time, I truly feel aligned with what I want in life. 
             I always want to learn more. 
@@ -88,6 +91,7 @@ function AboutMe() {
                 <div className="content-boxes">
                     {contentData.map((data, index) => (
                         <div
+                            id={data.id}
                             className={`content-box ${data.imageClass.includes("right") ? "reverse" : ""} ${
                                 expandedBoxes[index] ? "expanded" : ""
                             }`}
