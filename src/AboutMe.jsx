@@ -42,7 +42,8 @@ function AboutMe() {
             designing little projects just for fun. Back then, I dreamed of becoming a programmer. 
             But because I struggled with math in school, everyone told me it wasn’t realistic. 
             So, I chose more humanities-focused paths in education.`,
-            imageClass: "image-left"
+            imageClass: "image-left",
+            imageSrc: "/images/how-it-started.jpg", // Replace with the correct path to your image
         },
         {
             id: "education-early-work",
@@ -51,7 +52,8 @@ function AboutMe() {
             I worked mostly in creative fields, often helping out at various exhibitions. After college, I landed a job at a real estate agency. 
             I was responsible for client communication, document management (CRM, Excel etc), and even became the go-to tech support for my team! Though this wasn’t my dream job, 
             I excelled at it, staying for almost five years and building strong relationships with clients and colleagues alike.`,
-            imageClass: "image-right"
+            imageClass: "image-right",
+            imageSrc: "/images/education-early-work.jpg", // Replace with the correct path to your image
         },
         {
             id: "bar-that-rocked",
@@ -59,7 +61,8 @@ function AboutMe() {
             content: `Following my corporate career, I took a bold step and opened Moscow's first bar specifically for metalheads. It was a dream come true—a unique space for the heavy music community, blending my passion for metal and business. I even played drums for several years, so this project was personal to me. However, the pandemic changed everything. 
             I managed to keep the bar running for two more years, but the challenges became too overwhelming. 
             In the end, I had to close it and made the difficult decision to move to Brazil.`,
-            imageClass: "image-left"
+            imageClass: "image-left",
+            imageSrc: "/images/bar-that-rocked.jpg", // Replace with the correct path to your image
         },
         {
             id: "new-chapter",
@@ -68,7 +71,8 @@ function AboutMe() {
             I always want to learn more. 
             This journey—from building computers at age 7 to navigating life’s twists and turns—has 
             led me back to the dream I’ve had all along. And I couldn’t be happier.`,
-            imageClass: "image-right"
+            imageClass: "image-right",
+            imageSrc: "/images/new-chapter.jpg", // Replace with the correct path to your image
         }
     ];
 
@@ -97,7 +101,14 @@ function AboutMe() {
                             }`}
                             key={index}
                         >
-                            <div className={`content-image ${data.imageClass}`}></div>
+                            <div
+                                className={`content-image ${data.imageClass}`}
+                                style={{
+                                    backgroundImage: `url(${data.imageSrc})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                }}
+                            ></div>
                             <div className="content-text">
                                 <h3>{data.title}</h3>
                                 {(!isSmallScreen || expandedBoxes[index]) && <p>{data.content}</p>}
@@ -123,6 +134,7 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
 
 
 
