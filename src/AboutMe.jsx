@@ -8,13 +8,12 @@ function AboutMe() {
 
     const nextSectionRef = useRef(null);
 
-    // Detect screen size to adjust layout for small screens
     useEffect(() => {
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 750);
         };
 
-        handleResize(); // Initial check
+        handleResize(); 
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -22,21 +21,21 @@ function AboutMe() {
         };
     }, []);
 
-    // Toggle the expansion of a specific content box
+    
     const toggleBox = (index) => {
         setExpandedBoxes((prev) =>
             prev.map((isExpanded, i) => (i === index ? !isExpanded : isExpanded))
         );
     };
 
-    // Scroll to the next section (Portfolio)
+    
     const scrollToNextSection = () => {
         if (nextSectionRef.current) {
             nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
-    // Content data for the "About Me" section
+    
     const contentData = [
         {
             id: "how-it-started",
@@ -47,7 +46,7 @@ function AboutMe() {
             But because I struggled with math in school, everyone told me it wasn’t realistic. 
             So, I chose more humanities-focused paths in education.`,
             imageClass: "image-left",
-            imageSrc: "/images/how-it-started.jpg", // Replace with the correct path to your image
+            imageSrc: "/images/how-it-started.jpg", 
         },
         {
             id: "education-early-work",
@@ -57,7 +56,7 @@ function AboutMe() {
             I was responsible for client communication, document management (CRM, Excel etc), and even became the go-to tech support for my team! Though this wasn’t my dream job, 
             I excelled at it, staying for almost five years and building strong relationships with clients and colleagues alike.`,
             imageClass: "image-right",
-            imageSrc: "/images/education-early-work.jpg", // Replace with the correct path to your image
+            imageSrc: "/images/education-early-work.jpg", 
         },
         {
             id: "bar-that-rocked",
@@ -66,7 +65,7 @@ function AboutMe() {
             I managed to keep the bar running for two more years, but the challenges became too overwhelming. 
             In the end, I had to close it and made the difficult decision to move to Brazil.`,
             imageClass: "image-left",
-            imageSrc: "/images/bar-that-rocked.jpg", // Replace with the correct path to your image
+            imageSrc: "/images/bar-that-rocked.jpg", 
         },
         {
             id: "new-chapter",
@@ -76,7 +75,7 @@ function AboutMe() {
             This journey—from building computers at age 7 to navigating life’s twists and turns—has 
             led me back to the dream I’ve had all along. And I couldn’t be happier.`,
             imageClass: "image-right",
-            imageSrc: "/images/new-chapter.jpg", // Replace with the correct path to your image
+            imageSrc: "/images/new-chapter.jpg", 
         }
     ];
 
