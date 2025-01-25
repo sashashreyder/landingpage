@@ -8,12 +8,13 @@ function AboutMe() {
 
     const nextSectionRef = useRef(null);
 
+    // Detect screen size to adjust layout for small screens
     useEffect(() => {
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 750);
         };
 
-        handleResize();
+        handleResize(); // Initial check
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -21,18 +22,21 @@ function AboutMe() {
         };
     }, []);
 
+    // Toggle the expansion of a specific content box
     const toggleBox = (index) => {
-        const updatedBoxes = [...expandedBoxes];
-        updatedBoxes[index] = !updatedBoxes[index];
-        setExpandedBoxes(updatedBoxes);
+        setExpandedBoxes((prev) =>
+            prev.map((isExpanded, i) => (i === index ? !isExpanded : isExpanded))
+        );
     };
 
+    // Scroll to the next section (Portfolio)
     const scrollToNextSection = () => {
         if (nextSectionRef.current) {
             nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
+    // Content data for the "About Me" section
     const contentData = [
         {
             id: "how-it-started",

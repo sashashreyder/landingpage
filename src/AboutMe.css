@@ -1,12 +1,9 @@
 .AboutMe {
     height: 100%;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    padding: 30px 0;
+    margin-top: 40px;
 }
 
 .button-container {
@@ -88,21 +85,23 @@
 
 .content-boxes {
     width: 70%;
-    margin: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
 }
 
 .content-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 30px;
+    padding: 40px;
     transition: all 0.3s ease-in-out;
     z-index: 2;
 }
@@ -114,45 +113,6 @@
 .content-box.expanded .content-text {
     display: block;
 }
-
-.content-image {
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    flex-shrink: 0;
-    margin: 10px;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-}
-
-.image-left {
-    background-image: url('https://i.postimg.cc/L62StjLh/react.jpg'); /* Placeholder for how-it-started */
-}
-
-.image-right {
-    background-image: url('https://i.postimg.cc/8Pz6XzKT/javascript.jpg'); /* Placeholder for education-early-work */
-}
-
-#how-it-started .image-left {
-    background-image: url('https://via.placeholder.com/100'); /* Replace with specific image for "How it started?" */
-}
-
-#education-early-work .image-right {
-    background-image: url('https://via.placeholder.com/100'); /* Replace with specific image for "Education & Early Work" */
-}
-
-#bar-that-rocked .image-left {
-    background-image: url('https://via.placeholder.com/100'); /* Replace with specific image for "The Bar That Rocked Moscow" */
-}
-
-#new-chapter .image-right {
-    background-image: url('https://via.placeholder.com/100'); /* Replace with specific image for "A New Chapter" */
-}
-
 
 .content-text {
     flex: 1;
@@ -173,7 +133,7 @@
 }
 
 @media (max-width: 1080px) {
-    .AboutMe{
+    .AboutMe {
         padding: 0px;
     } 
 }
@@ -194,7 +154,6 @@
         flex-direction: row;
         justify-content: space-around;
         gap: 5px;
-        
     }
 
     .content-box.reverse {
@@ -221,11 +180,23 @@
     }
 
     .toggle-btn {
-        display: contents;
+        display: inline-block;
         font-size: 1.25rem;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .toggle-btn:hover {
+        color: #f9a023;
+        transform: scale(1.1);
     }
 
     .toggle-btn::after {
+        content: '';
+        display: inline-block;
         width: 8px;
         height: 8px;
         border-width: 1.5px;
@@ -292,6 +263,7 @@
     background: url('https://i.gifer.com/BX3b.gif') no-repeat center center;
     background-size: cover;
     opacity: 0.3;
+    margin: 0;
 }
 
 #bar-that-rocked .content-box {
@@ -315,6 +287,7 @@
     background-size: cover;
     opacity: 0.3;
 }
+
 
 #new-chapter .content-box {
     position: relative;
