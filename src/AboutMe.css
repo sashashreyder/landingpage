@@ -95,6 +95,7 @@
 .content-box {
     display: flex;
     align-items: center;
+    height: 200px;
     justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -103,7 +104,6 @@
     border-radius: 20px;
     padding: 40px;
     transition: all 0.3s ease-in-out;
-    z-index: 2;
 }
 
 .content-box.reverse {
@@ -115,7 +115,6 @@
 }
 
 .content-text {
-    flex: 1;
     color: #fff;
     position: relative;
 }
@@ -187,6 +186,7 @@
         color: #fff;
         cursor: pointer;
         margin-left: 10px;
+        z-index: 10;
     }
 
     .toggle-btn:hover {
@@ -206,7 +206,6 @@
 #how-it-started {
     position: relative;
     overflow: hidden; 
-    z-index: 1;
 }
 
 #how-it-started::before {
