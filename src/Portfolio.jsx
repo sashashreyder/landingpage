@@ -13,6 +13,7 @@ function Portfolio() {
                     <div className="portfolio-item">Project 4</div>
                 </div>
             </div>
+            <div className="portfolio-separator"></div>
         </div>
     );
 }

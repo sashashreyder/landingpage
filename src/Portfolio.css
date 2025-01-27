@@ -14,7 +14,7 @@
 .portfolio-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #f9f871;
+    color: #dec094;
 }
 
 .portfolio-grid {
@@ -45,6 +45,38 @@
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.portfolio-separator {
+    position: relative;
+    height: 20px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #dec094, #c8a375);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+}
+
+.portfolio-separator::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 70%);
+    opacity: 0.3;
+    animation: wave-animation 6s infinite linear;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 @media (max-width: 1080px) {
     .portfolio-grid {
