@@ -13,9 +13,6 @@ function Navbar() {
             <a href="#contact" className="nav-icon">
                 <img src="https://i.postimg.cc/RCP44N2Y/mail-60dp-FFFFFF-FILL0-wght400-GRAD0-opsz48.png" alt="Contact" />
             </a>
-            <a href="#contact" className="nav-icon">
-                <img src="https://i.postimg.cc/x1kqB3FV/icons8-github-100.png" alt="Git" />
-            </a>
         </div>
     );
 }

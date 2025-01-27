@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Navbar />
     <HeroSection/>
     <AboutMe />
+    <Contact />
     </> 
   )
 }
