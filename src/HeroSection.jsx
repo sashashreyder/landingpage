@@ -13,7 +13,7 @@ function HeroSection() {
   };
 
   return (
-    <div className='HeroSection'>
+    <div id='HeroSection'>
       <div className="glass-container">
         <div className='text-container'>
           <h1
