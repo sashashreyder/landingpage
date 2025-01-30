@@ -14,15 +14,15 @@ function Contact() {
                 <div className="contact-items">
                     <div className="contact-item" onClick={() => handleCopy('your-email@example.com')}>
                         <i className="contact-icon fas fa-envelope"></i>
-                        <span>Email: your-email@example.com</span>
+                        <span>Email: sashashreiderbr@gmail.com</span>
                     </div>
                     <div className="contact-item" onClick={() => handleCopy('+123456789')}>
                         <i className="contact-icon fas fa-phone"></i>
-                        <span>Phone: +123456789</span>
+                        <span>Telegram: @goats_mother</span>
                     </div>
                     <div className="contact-item">
                         <a
-                            href="https://www.linkedin.com/in/your-profile/"
+                            href="https://www.linkedin.com/in/sashashreider"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -32,7 +32,7 @@ function Contact() {
                     </div>
                     <div className="contact-item">
                         <a
-                            href="https://github.com/your-profile"
+                            href="https://github.com/sashashreyder"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
