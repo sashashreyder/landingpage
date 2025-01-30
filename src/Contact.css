@@ -8,12 +8,11 @@
 .contact-container {
     max-width: 800px;
     margin: 0 auto;
-
     padding: 20px;
 }
 
 .contact-title {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 30px;
     color: #dec094;
 }
@@ -41,12 +40,12 @@
 }
 
 .contact-icon {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #dec094;
 }
 
 .contact-item span {
-    font-size: 1.2rem;
+    font-size: 19.2px;
 }
 
 .contact-item a {
@@ -63,7 +62,7 @@
 
 @media (max-width: 600px) {
     .contact-title {
-        font-size: 2rem;
+        font-size: 32px;
     }
 
     .contact-item {
@@ -72,10 +71,11 @@
     }
 
     .contact-icon {
-        font-size: 1.2rem;
+        font-size: 19.2px;
     }
 
     .contact-item span {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
+

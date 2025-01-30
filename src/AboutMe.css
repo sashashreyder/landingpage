@@ -20,7 +20,7 @@
     border-radius: 25px;
     color: #fff;
     font-family: 'Italiana', serif; 
-    font-size: 1rem;
+    font-size: 16px;
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.6s ease;
@@ -102,13 +102,13 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 20px; /* Reduced padding */
+    padding: 20px;
     transition: all 0.3s ease-in-out;
     height: auto;
     min-height: 200px;
     max-height: 300px;
     overflow-y: auto;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
 .content-box::-webkit-scrollbar {
@@ -135,18 +135,18 @@
     overflow-y: auto;
     max-height: 100%;
     padding-right: 10px;
-    width: 100%; /* Makes sure text fits inside */
+    width: 100%;
 }
 
 .content-text h3 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #dec094;
 }
 
 .content-text p {
     margin: 10px 0 0;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -162,7 +162,7 @@
     }
 
     .skipthestory {
-        font-size: 0.9rem;
+        font-size: 14px;
         padding: 8px 16px;
     }
 
@@ -179,17 +179,17 @@
     }
 
     .content-text h3 {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 
     .content-text p {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 
     .toggle-btn {
         display: flex;
         align-self: flex-end;
-        font-size: 2rem;
+        font-size: 32px;
         background: none;
         border: none;
         color: #fff;
@@ -204,7 +204,6 @@
     }
 }
 
-/* Background Image Adjustments */
 #how-it-started, 
 #education-early-work, 
 #bar-that-rocked, 
@@ -223,7 +222,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover; /* Ensures full cover */
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -254,6 +253,7 @@
     z-index: 2;
     background: rgba(0, 0, 0, 0.6); 
 }
+
 
 
 

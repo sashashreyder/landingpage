@@ -12,7 +12,7 @@
 }
 
 .portfolio-title {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 20px;
     color: #dec094;
 }
@@ -77,7 +77,6 @@
     }
 }
 
-
 @media (max-width: 1080px) {
     .portfolio-grid {
         grid-template-columns: repeat(2, 300px); 
@@ -105,7 +104,7 @@
 
 @media (max-width: 480px) {
     .portfolio-title {
-        font-size: 1.8rem; 
+        font-size: 28.8px; 
     }
 
     .portfolio-item {
@@ -114,4 +113,5 @@
         padding: 15px; 
     }
 }
+
 
