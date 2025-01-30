@@ -96,28 +96,46 @@
 .content-box {
     display: flex;
     align-items: center;
-    height: 200px;
     justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     transition: all 0.3s ease-in-out;
+    height: auto;
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%; /* Ensure full width */
+}
+
+.content-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.content-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background: #dec094;
+    border-radius: 10px;
 }
 
 .content-box.reverse {
     flex-direction: row-reverse;
 }
 
-.content-box.expanded .content-text {
-    display: block;
-}
-
 .content-text {
     color: #fff;
     position: relative;
+    overflow-y: auto;
+    max-height: 100%;
+    padding-right: 10px;
+    width: 100%; /* Makes sure text fits inside */
 }
 
 .content-text h3 {
@@ -135,29 +153,28 @@
 @media (max-width: 1080px) {
     .AboutMe {
         padding: 0px;
-    } 
+    }
 }
 
 @media (max-width: 750px) {
-
     .AboutMe {
         margin-bottom: 30px;
     }
 
     .skipthestory {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
         padding: 8px 16px;
     }
 
     .content-box {
-        width: 90%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 5px;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        max-height: 400px;
     }
 
     .content-box.reverse {
-        flex-direction: row-reverse;
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -169,18 +186,9 @@
         font-size: 0.9rem;
     }
 
-    .content-image {
-        width: 80px;
-        height: 80px;
-    }
-
-    .content-box.expanded .content-text p {
-        display: block;
-        overflow: hidden;
-    }
-
     .toggle-btn {
-        display: inline-block;
+        display: flex;
+        align-self: flex-end;
         font-size: 1.25rem;
         background: none;
         border: none;
@@ -194,88 +202,20 @@
         color: #f9a023;
         transform: scale(1.1);
     }
-
-    .toggle-btn::after {
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-width: 1.5px;
-    }
 }
 
-#how-it-started {
-    position: relative;
-    overflow: hidden; 
-}
-
-#how-it-started::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.gifer.com/WEbB.gif') no-repeat center center;
-    background-size: cover;
-    opacity: 0.4; 
-}
-
-#how-it-started .content-box {
-    position: relative;
-    z-index: 2; 
-}
-
-#education-early-work {
-    position: relative;
-    overflow: hidden;
-}
-
-#education-early-work::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.gifer.com/FTLF.gif') no-repeat center center;
-    background-size: cover;
-    opacity: 0.3;
-}
-
-#education-early-work .content-box {
-    position: relative;
-    z-index: 2;
-}
-
-#bar-that-rocked {
-    position: relative;
-    overflow: hidden;
-}
-
-#bar-that-rocked::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.gifer.com/BX3b.gif') no-repeat center center;
-    background-size: cover;
-    opacity: 0.3;
-    margin: 0;
-}
-
-#bar-that-rocked .content-box {
-    position: relative;
-    z-index: 2;
-}
-
+/* Background Image Adjustments */
+#how-it-started, 
+#education-early-work, 
+#bar-that-rocked, 
 #new-chapter {
     position: relative;
     overflow: hidden;
 }
 
+#how-it-started::before, 
+#education-early-work::before, 
+#bar-that-rocked::before, 
 #new-chapter::before {
     content: "";
     position: absolute;
@@ -283,21 +223,37 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://i.gifer.com/6vIk.gif') no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* Ensures full cover */
+    background-position: center center;
+    background-repeat: no-repeat;
     opacity: 0.3;
+    z-index: -1;
 }
 
+#how-it-started::before {
+    background-image: url('https://i.gifer.com/WEbB.gif');
+}
 
+#education-early-work::before {
+    background-image: url('https://i.gifer.com/FTLF.gif');
+}
+
+#bar-that-rocked::before {
+    background-image: url('https://i.gifer.com/BX3b.gif');
+}
+
+#new-chapter::before {
+    background-image: url('https://i.gifer.com/6vIk.gif');
+}
+
+#how-it-started .content-box,
+#education-early-work .content-box,
+#bar-that-rocked .content-box,
 #new-chapter .content-box {
     position: relative;
     z-index: 2;
+    background: rgba(0, 0, 0, 0.6); 
 }
-
-
-
-
-
 
 
 
