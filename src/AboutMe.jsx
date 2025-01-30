@@ -121,7 +121,7 @@ function AboutMe() {
                                     className="toggle-btn"
                                     onClick={() => toggleBox(index)}
                                 >
-                                    {expandedBoxes[index] ? "▲" : "▼"}
+                                    {expandedBoxes[index] ? "↑" : "↓"}
                                 </button>
                             )}
                         </div>

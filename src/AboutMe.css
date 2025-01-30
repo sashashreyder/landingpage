@@ -189,7 +189,7 @@
     .toggle-btn {
         display: flex;
         align-self: flex-end;
-        font-size: 1.25rem;
+        font-size: 2rem;
         background: none;
         border: none;
         color: #fff;
@@ -199,7 +199,7 @@
     }
 
     .toggle-btn:hover {
-        color: #f9a023;
+        color: #e69e3a;
         transform: scale(1.1);
     }
 }
