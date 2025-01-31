@@ -32,11 +32,11 @@ function HeroSection() {
         </div>
 
         <div className="skills-icons">
-          <img src="/landingpage/HTML5-sh.jpg" alt="HTML" />
-          <img src="/landingpage/CSS3.jpg" alt="CSS" />
-          <img src="/landingpage/JS.jpg" alt="JS" />
-          <img src="/landingpage/react.jpg" alt="React" />
-        </div>
+         <img src="https://i.postimg.cc/Qt7DbbfK/HTML5-sh.jpg" alt="HTML" />
+         <img src="https://i.postimg.cc/ZnFSkqtT/CSS3.jpg" alt="CSS" />
+         <img src="https://i.postimg.cc/5yMVkCr7/JS.jpg" alt="JS" />
+         <img src="https://i.postimg.cc/L62StjLh/react.jpg" alt="React" />
+       </div>
 
         <div className="image-container">
           <img
