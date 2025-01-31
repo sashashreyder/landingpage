@@ -48,12 +48,13 @@
 
 .portfolio-separator {
     position: relative;
-    height: 20px;
-    margin-top: 40px;
-    background: linear-gradient(135deg, #dec094, #c8a375);
+    height: 10px;
+    margin-top: 50px;
+    background: linear-gradient(135deg, #dec094, #d38e39);
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+    opacity: 0.6;
 }
 
 .portfolio-separator::before {
