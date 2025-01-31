@@ -6,6 +6,7 @@ import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
+import Footer from './Footer'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <HeroSection/>
     <AboutMe />
     <Contact />
+    <Footer />
     </> 
   )
 }

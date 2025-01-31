@@ -1,0 +1,12 @@
+#footer-container {
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(241, 172, 23, 0.656);
+}
+
+
+.mypagefooter {
+    text-align: center;
+    color: antiquewhite;
+
+}
