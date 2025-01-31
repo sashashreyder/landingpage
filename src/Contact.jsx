@@ -14,11 +14,11 @@ function Contact() {
                 <div className="contact-items">
                     <div className="contact-item" onClick={() => handleCopy('your-email@example.com')}>
                         <i className="contact-icon fas fa-envelope"></i>
-                        <span>Email: sashashreiderbr@gmail.com</span>
+                        <span>sashashreiderbr@gmail.com</span>
                     </div>
                     <div className="contact-item" onClick={() => handleCopy('+123456789')}>
                         <i className="contact-icon fas fa-phone"></i>
-                        <span>Telegram: @goats_mother</span>
+                        <span>+55 (11) 96965-2319</span>
                     </div>
                     <div className="contact-item">
                         <a
