@@ -1,6 +1,9 @@
 .navbar-column {
     position: fixed;
-    height: 100%;
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
     width: 60px;
     display: flex;
     flex-direction: column;
@@ -11,18 +14,18 @@
 }
 
 .nav-icon {
-    margin: 18px 0;
+    margin: 15px 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .nav-icon img {
-    width: 30px;
+    width: 30px; 
     height: 30px;
-    filter: brightness(0.8);
+    filter: none; 
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .nav-icon:hover img {
     transform: scale(1.2); 
-    filter: brightness(1);
 }
+
