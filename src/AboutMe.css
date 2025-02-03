@@ -52,6 +52,7 @@
     overflow: hidden; 
     position: relative; 
     animation: typing 3s steps(21, end) forwards; 
+    margin-top: 40px;
 }
 
 .handwriting-text::after {
@@ -87,6 +88,7 @@
 .content-boxes {
     width: 70%;
     margin-top: 50px;
+    margin-bottom: 40PX;
     display: flex;
     flex-direction: column;
     gap: 40px;
