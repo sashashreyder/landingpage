@@ -67,17 +67,24 @@
     }
 
     .contact-item {
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
         text-align: center;
+        width: 350px;
     }
 
     .contact-icon {
-        font-size: 19.2px;
+        font-size: 18px;
     }
 
     .contact-text {
-        font-size: 16px;
+        font-size: 18px;
     }
+
+    #contact-section {
+        display: flex;
+        justify-content: center;
+}
 }
 
 
