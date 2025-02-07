@@ -7,10 +7,14 @@ function Portfolio() {
             <div className="portfolio-container">
                 <h1 className="portfolio-title">My Portfolio</h1>
                 <div className="portfolio-grid">
-                    <div className="portfolio-item">Project 1</div>
-                    <div className="portfolio-item">Project 2</div>
-                    <div className="portfolio-item">Project 3</div>
-                    <div className="portfolio-item">Project 4</div>
+                    <a href="https://simple-to-do-list-4b5e9.web.app/" target="_blank" rel="noopener noreferrer" className="portfolio-item">
+                        <img src="https://i.postimg.cc/V6DpZ4q5/Todolist.png" alt="To-Do List Project" />
+                        <span className="portfolio-item-title">To-Do List</span>
+                    </a>
+                    <a href="https://expofp-brazil.web.app/" target="_blank" rel="noopener noreferrer" className="portfolio-item">
+                        <img src="https://i.postimg.cc/J0Vdtg5y/Expo.png" alt="Expo FP Brazil Project" />
+                        <span className="portfolio-item-title">Expo FP Brazil</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -18,4 +22,5 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
 

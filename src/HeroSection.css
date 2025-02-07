@@ -1,4 +1,4 @@
-#HeroSection {
+#hero-section {
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     position: relative;
 }   
 
-.glass-container {
+.hero-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -19,7 +19,7 @@
     padding: 25px;
 }
 
-.greeting {
+.hero-greeting {
     text-align: center;
     font-size: 90px;
     letter-spacing: 5px;
@@ -30,13 +30,13 @@
     margin: 10px;
 }
 
-.line {
+.hero-line {
     height: 0.1px;
     opacity: 0.7;
     background: #dcdcdc;
 }
 
-.description {
+.hero-description {
     font-size: 17.6px;
     text-align: center;
     line-height: 24px;
@@ -46,29 +46,29 @@
     font-family: 'Italiana', serif;
 }
 
-.skills-icons {
+.hero-skills {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.skills-icons img {
+.hero-skills img {
     width: 50px;
     height: 50px;
     border-radius: 8px;
     transition: transform 0.3s ease-out;
 }
 
-.skills-icons img:hover {
+.hero-skills img:hover {
     transform: scale(1.1);
     opacity: 0.8;
 }
 
-.image-container {
+.hero-image {
     position: relative;
 }
 
-#profilePic {
+.profile-picture {
     width: 250px;
     border-radius: 50%;
     position: relative;
@@ -76,30 +76,25 @@
     cursor: pointer;
 }
 
-.gif-container {
+.hero-gif {
     position: absolute;
-    top: 9px;
-    left: 480px;
     z-index: 3;
 }
 
 .greeting-gif {
-    width: 130px;
-    height: auto;
-    border-radius: 100px;
-}
-
-.other-gif-container {
-    position: absolute;
-    top: 30px;
-    left: 1070px;
-    z-index: 3;
+    top: 9px;
+    left: 480px;
 }
 
 .profile-gif {
-    width: 180px;
+    top: 30px;
+    left: 1070px;
+}
+
+.hero-gif img {
+    width: 130px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 @keyframes bounce {
@@ -112,196 +107,179 @@
 }
 
 @media (max-width: 1200px) {
-    .glass-container {
+    .hero-container {
         color: #ededb9; 
         gap: 10px;
     }
 
-    .greeting {
+    .hero-greeting {
         font-size: 70px;
         letter-spacing: 4px;
     }
 
-    #profilePic {
+    .profile-picture {
         width: 250px;
     }
 
-    .description {
+    .hero-description {
         font-size: 17.6px;
     }
 
-    .gif-container {
-        position: fixed;
+    .greeting-gif {
         top: 15px;
         left: 415px;
     }
 
-    .greeting-gif {
+    .greeting-gif img {
         width: 120px;
     }
 
-    .other-gif-container {
+    .profile-gif {
         display: none;
-    }
-
-    .learnMore {
-        font-size: 55px;
-        top: 105%;
-    }
-
-    .aboutMeArrow {
-        position: fixed;
-        width: 36px;
-        top: 115%;
-        left: 790px;
     }
 }
 
 @media (max-width: 1080px) {
-    .HeroSection {
+    #hero-section {
         flex-direction: column;
         margin: 40px;
     }
 
-    .glass-container {
+    .hero-container {
         flex-direction: column;
         padding: 16px;
     }
 
-    .greeting {
+    .hero-greeting {
         font-size: 70px;
         letter-spacing: 3px;
     }
 
-    .line {
+    .hero-line {
         margin: 15px;
     }
 
-    .description {
+    .hero-description {
         font-size: 17.6px;
     }
 
-    .skills-icons {
+    .hero-skills {
         flex-direction: row;
         gap: 15px;
         margin-bottom: 15px;
     }
 
-    .skills-icons img {
+    .hero-skills img {
         width: 40px;
         height: 40px;
     }
 
-    #profilePic {
+    .profile-picture {
         width: 250px;
         margin: 5px;
     }
 
-    #codePic {
-        max-width: 400px;
-        opacity: 0.05;
-    }
-
-    .gif-container {
+    .greeting-gif {
         top: 10px;
         left: 65%;
     }
 
-    .greeting-gif {
+    .greeting-gif img {
         width: 100px;
     }
 }
 
 @media (max-width: 850px) {
-    .gif-container {
+    .greeting-gif {
         top: 10px;
         left: 75%;
     }
 }
 
 @media (max-width: 580px) {
-    .gif-container {
+    .greeting-gif {
         top: 10px;
         left: 78%;
     }
 
-    .greeting-gif {
+    .greeting-gif img {
         width: 70px;
     }
 }
 
 @media (max-width: 480px) {
-    .greeting {
+    .hero-greeting {
         letter-spacing: 2px;
     }
 
-    .description {
+    .hero-description {
         font-size: 16px;
     }
 
-    .skills-icons img {
+    .hero-skills img {
         width: 30px;
         height: 30px;
     }
 
-    #profilePic {
+    .profile-picture {
         width: 200px;
     }
 
-    .gif-container {
+    .greeting-gif {
         top: 10px;
         left: 80%;
     }
 
-    .greeting-gif {
+    .greeting-gif img {
         width: 50px;
     }
 }
 
 @media (min-width: 1600px) {
-    .glass-container {
+    .hero-container {
         width: 70%;
         padding: 40px;
     }
 
-    .greeting {
+    .hero-greeting {
         font-size: 120px;
         letter-spacing: 6px;
     }
 
-    .description {
+    .hero-description {
         font-size: 20px;
         line-height: 28px;
         max-width: 600px;
     }
 
-    .skills-icons img {
+    .hero-skills img {
         width: 60px;
         height: 60px;
     }
 
-    #profilePic {
+    .profile-picture {
         width: 300px;
     }
 
-    .gif-container {
+    .greeting-gif {
         top: 10px;
         left: 500px;
     }
 
-    .greeting-gif {
+    .greeting-gif img {
         width: 150px;
     }
 
-    .other-gif-container {
+    .profile-gif {
         top: 50px;
         left: 1200px;
     }
 
-    .profile-gif {
+    .profile-gif img {
         width: 200px;
     }
 }
+
 
 
 

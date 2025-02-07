@@ -1,4 +1,4 @@
-.navbar-column {
+.navbar-container {
     position: fixed;
     left: 20px; 
     top: 50%;
@@ -13,19 +13,20 @@
     z-index: 1000; 
 }
 
-.nav-icon {
+.navbar-icon {
     margin: 15px 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.nav-icon img {
+.navbar-icon img {
     width: 30px; 
     height: 30px;
     filter: none; 
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.nav-icon:hover img {
+.navbar-icon:hover img {
     transform: scale(1.2); 
 }
+
 

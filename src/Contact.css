@@ -1,4 +1,4 @@
-#Contact {
+#contact-section {
     padding: 40px;
     padding-top: 5px;
     color: #fff;
@@ -6,19 +6,19 @@
     box-shadow: 0px 1px 15px rgba(119, 92, 47, 0.792);
 }
 
-.contact-container {
+.contact-wrapper {
     max-width: 800px;
     margin: 0 auto;
     padding: 10px;
 }
 
-.contact-title {
+.contact-heading {
     font-size: 40px;
     margin-bottom: 30px;
     color: #dec094;
 }
 
-.contact-items {
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -45,11 +45,11 @@
     color: #dec094;
 }
 
-.contact-item span {
+.contact-text {
     font-size: 19.2px;
 }
 
-.contact-item a {
+.contact-link {
     color: inherit;
     text-decoration: none;
     display: flex;
@@ -57,12 +57,12 @@
     gap: 10px;
 }
 
-.contact-item a:hover {
+.contact-link:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    .contact-title {
+    .contact-heading {
         font-size: 32px;
     }
 
@@ -75,8 +75,9 @@
         font-size: 19.2px;
     }
 
-    .contact-item span {
+    .contact-text {
         font-size: 16px;
     }
 }
+
 

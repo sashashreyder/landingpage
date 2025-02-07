@@ -3,17 +3,17 @@ import './AboutMe.css';
 import Portfolio from './Portfolio';
 
 function AboutMe() {
-    const [expandedBoxes, setExpandedBoxes] = useState([false, false, false, false]);
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [expandedSections, setExpandedSections] = useState([false, false, false, false]);
+    const [isMobileView, setIsMobileView] = useState(false);
 
     const nextSectionRef = useRef(null);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 750);
+            setIsMobileView(window.innerWidth < 750);
         };
 
-        handleResize(); 
+        handleResize();
         window.addEventListener('resize', handleResize);
 
         return () => {
@@ -21,24 +21,21 @@ function AboutMe() {
         };
     }, []);
 
-    
-    const toggleBox = (index) => {
-        setExpandedBoxes((prev) =>
+    const toggleSection = (index) => {
+        setExpandedSections((prev) =>
             prev.map((isExpanded, i) => (i === index ? !isExpanded : isExpanded))
         );
     };
 
-    
     const scrollToNextSection = () => {
         if (nextSectionRef.current) {
             nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
-    
-    const contentData = [
+    const aboutMeData = [
         {
-            id: "how-it-started",
+            id: "section-start",
             title: "How it started?",
             content: `When I was a child, my dad worked as a programmer, and his love for tech rubbed off on me. 
             By the time I was 7 (or something like that), I could assemble a computer from scratch and was experimenting with Macromedia Flash to create simple animations, explored Photoshop, 
@@ -49,7 +46,7 @@ function AboutMe() {
             imageSrc: "/images/how-it-started.jpg", 
         },
         {
-            id: "education-early-work",
+            id: "section-education",
             title: "Education & Early Work",
             content: `I first studied to become an English teacher in college but later earned my bachelor's degree in journalism. During my studies, 
             I worked mostly in creative fields, often helping out at various exhibitions. After college, I landed a job at a real estate agency. 
@@ -59,7 +56,7 @@ function AboutMe() {
             imageSrc: "/images/education-early-work.jpg", 
         },
         {
-            id: "bar-that-rocked",
+            id: "section-bar",
             title: "The Bar That Rocked Moscow",
             content: `Following my corporate career, I took a bold step and opened Moscow's first bar specifically for metalheads. It was a dream come true—a unique space for the heavy music community, blending my passion for metal and business. I even played drums for several years, so this project was personal to me. However, the pandemic changed everything. 
             I managed to keep the bar running for two more years, but the challenges became too overwhelming. 
@@ -68,7 +65,7 @@ function AboutMe() {
             imageSrc: "/images/bar-that-rocked.jpg", 
         },
         {
-            id: "new-chapter",
+            id: "section-new-chapter",
             title: "A New Chapter",
             content: `Moving to Brazil marked a turning point in my life. After taking time to heal and reflect, I realized it was never too late to chase my childhood dream. I dove into programming with a passion I hadn’t felt in years. For the first time, I truly feel aligned with what I want in life. 
             I always want to learn more. 
@@ -81,47 +78,47 @@ function AboutMe() {
 
     return (
         <>
-            <div className="AboutMe">
-                <div className="background-container"></div>
-                <div className="text-container-aboutme">
-                    <div className="handwriting-container">
-                        <span className="handwriting-text">Let's get acquainted!</span>
+            <div className="about-me-section">
+                <div className="background-overlay"></div>
+                <div className="intro-text-container">
+                    <div className="handwriting-wrapper">
+                        <span className="handwriting-message">Let's get acquainted!</span>
                     </div>
                 </div>
 
-                <div className="button-container">
-                    <button className="skipthestory" onClick={scrollToNextSection}>
+                <div className="skip-button-wrapper">
+                    <button className="skip-story-button" onClick={scrollToNextSection}>
                         Skip My Story 🥺
                     </button>
                 </div>
 
-                <div className="content-boxes">
-                    {contentData.map((data, index) => (
+                <div className="about-content-wrapper">
+                    {aboutMeData.map((section, index) => (
                         <div
-                            id={data.id}
-                            className={`content-box ${data.imageClass.includes("right") ? "reverse" : ""} ${
-                                expandedBoxes[index] ? "expanded" : ""
+                            id={section.id}
+                            className={`about-content-box ${section.imageClass.includes("right") ? "reverse-layout" : ""} ${
+                                expandedSections[index] ? "expanded" : ""
                             }`}
                             key={index}
                         >
                             <div
-                                className={`content-image ${data.imageClass}`}
+                                className={`about-content-image ${section.imageClass}`}
                                 style={{
-                                    backgroundImage: `url(${data.imageSrc})`,
+                                    backgroundImage: `url(${section.imageSrc})`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                 }}
                             ></div>
-                            <div className="content-text">
-                                <h3>{data.title}</h3>
-                                {(!isSmallScreen || expandedBoxes[index]) && <p>{data.content}</p>}
+                            <div className="about-content-text">
+                                <h3>{section.title}</h3>
+                                {(!isMobileView || expandedSections[index]) && <p>{section.content}</p>}
                             </div>
-                            {isSmallScreen && (
+                            {isMobileView && (
                                 <button
-                                    className="toggle-btn"
-                                    onClick={() => toggleBox(index)}
+                                    className="expand-toggle-button"
+                                    onClick={() => toggleSection(index)}
                                 >
-                                    {expandedBoxes[index] ? "↑" : "↓"}
+                                    {expandedSections[index] ? "↑" : "↓"}
                                 </button>
                             )}
                         </div>
@@ -129,7 +126,7 @@ function AboutMe() {
                 </div>
             </div>
 
-            <div ref={nextSectionRef} id="Portfolio">
+            <div ref={nextSectionRef} id="portfolio-section">
                 <Portfolio />
             </div>
         </>
@@ -137,6 +134,7 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
 
 
 
