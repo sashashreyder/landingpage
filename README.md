@@ -1,8 +1,31 @@
-# React + Vite
+# Landing Page 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview  
+This is a **responsive landing page** designed with a modern and clean UI. It showcases structured sections, smooth animations, and interactive elements to engage users.  
 
-Currently, two official plugins are available:
+## 🌐 Live Demo  
+🔗 [Click here to view the live page](https://sashashreyder.github.io/landingpage/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Built With  
+- **HTML5**  
+- **CSS3 (Flexbox & Grid)**  
+- **JavaScript (for interactivity)**  
+
+## 📌 Features  
+✔️ Fully responsive design (mobile-first approach)  
+✔️ Smooth animations & transitions  
+✔️ Interactive navigation menu  
+✔️ Well-structured and maintainable code  
+
+## 🚀 Installation & Usage  
+If you want to run this project locally:  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/sashashreyder/landingpage.git
+   cd landingpage
+2. Open index.html in your browser
+
+📩 Contact
+💻 GitHub: sashashreyder
+📧 Email: sashashreiderbr@gmail.com
+
