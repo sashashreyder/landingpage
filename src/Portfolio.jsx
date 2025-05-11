@@ -8,15 +8,15 @@ function Portfolio() {
                 <h1 className="portfolio-title">My Portfolio</h1>
                 <div className="portfolio-grid">
                     <a
-                        href="website"
+                        href="https://made-by-human.web.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
-                        <img src="place" alt="Coming Soon" />
-                        <span className="portfolio-item-title">Under Construction</span>
+                        <img src="https://i.postimg.cc/k5snZ3JJ/SCR-20250511-qnwr.png" alt="https://i.postimg.cc/1t3GFQCb/SCR-20250511-qnwr.png" />
+                        <span className="portfolio-item-title">Made By Human</span>
                     </a>
                     <a
                         href="https://expofp-brazil.web.app/"
@@ -28,6 +28,28 @@ function Portfolio() {
                     >
                         <img src="https://i.postimg.cc/J0Vdtg5y/Expo.png" alt="Expo FP Brazil Project" />
                         <span className="portfolio-item-title">Expo FP Brazil</span>
+                    </a>
+                    <a
+                        href="https://made-by-human.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-item"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <img src="place" alt="https://i.postimg.cc/1t3GFQCb/SCR-20250511-qnwr.png" />
+                        <span className="portfolio-item-title">Made By Human</span>
+                    </a>
+                    <a
+                        href="https://made-by-human.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-item"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <img src="place" alt="https://i.postimg.cc/1t3GFQCb/SCR-20250511-qnwr.png" />
+                        <span className="portfolio-item-title">Made By Human</span>
                     </a>
                 </div>
             </div>

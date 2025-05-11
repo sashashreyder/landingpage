@@ -21,6 +21,7 @@ function HeroSection() {
           <div className="hero-icons-divider">
             <img src="https://i.postimg.cc/Qt7DbbfK/HTML5-sh.jpg" alt="HTML" />
             <img src="https://i.postimg.cc/ZnFSkqtT/CSS3.jpg" alt="CSS" />
+            <img src="https://i.postimg.cc/dQ9vWK0L/typescript-icon-icon-2048x2048-2rhh1z66.png" alt="TypeScript" />
             <img src="https://i.postimg.cc/5yMVkCr7/JS.jpg" alt="JavaScript" />
             <img src="https://i.postimg.cc/L62StjLh/react.jpg" alt="React" />
           </div>
@@ -35,7 +36,7 @@ function HeroSection() {
         <div className="hero-image" data-aos="fade">
           <img
             className="profile-picture"
-            src="media/1.jpg"
+            src="src/media/1.jpg"
             alt="Profile"
             onMouseEnter={() => setShowProfileGif(true)}
             onMouseLeave={() => setShowProfileGif(false)}
