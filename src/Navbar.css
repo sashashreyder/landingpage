@@ -22,6 +22,7 @@
     width: 30px; 
     height: 30px;
     filter: none; 
+    opacity: 40%;
     transition: transform 0.2s ease, filter 0.2s ease;
 }
 

@@ -102,8 +102,9 @@ function AboutMe() {
                                     'data-aos-delay': index * 150,
                                 })}
                                 className={`about-content-box ${section.imageClass.includes("right") ? "reverse-layout" : ""} ${
-                                    expandedSections[index] ? "expanded" : ""
-                                }`}
+                                    !isMobileView && expandedSections[index] ? "expanded" : ""
+                                  }`}
+                                  
                                 key={index}
                             >
                                 <div
