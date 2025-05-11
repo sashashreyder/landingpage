@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    background: linear-gradient(135deg, #1B2735, #2C5364, #0F2027, #203A43, #2C5364);
+    background-size: 400% 400%;
+    animation: gradientDynamic 10s ease-in-out infinite;
+}
+
+@keyframes gradientDynamic {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

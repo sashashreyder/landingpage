@@ -1,0 +1,307 @@
+#hero-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+
+.hero-icons-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    opacity: 0.9;
+  }
+  
+  .hero-icons-divider img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-icons-divider img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+
+.hero-text {
+  gap: 240px; 
+}
+
+.hero-greeting {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    color: #ceb28a;
+    font-family: 'Italiana', serif;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.hero-description {
+    font-size: 17.6px;
+    text-align: center;
+    line-height: 24px;
+    max-width: 500px;
+    color: #fff;
+    opacity: 0.8;
+    font-family: 'Italiana', serif;
+}
+
+.hero-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-skills img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-out;
+}
+
+.hero-skills img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.profile-picture {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.8s ease;
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.05);
+  }
+  
+
+.hero-gif {
+    position: absolute;
+    z-index: 3;
+}
+
+.greeting-gif {
+    top: 9px;
+    left: 480px;
+}
+
+.profile-gif {
+    top: 30px;
+    left: 1070px;
+}
+
+.hero-gif img {
+    width: 110px;
+    height: auto;
+    border-radius: 20px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-container {
+        color: #ededb9; 
+        gap: 10px;
+    }
+
+    .hero-greeting {
+        letter-spacing: 4px;
+    }
+
+    .profile-picture {
+        width: 250px;
+    }
+
+    .hero-description {
+        font-size: 17.6px;
+    }
+
+    .greeting-gif {
+        top: 15px;
+        left: 415px;
+    }
+
+    .greeting-gif img {
+        width: 120px;
+    }
+
+    .profile-gif {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    #hero-section {
+        flex-direction: column;
+        margin: 40px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .hero-greeting {
+        letter-spacing: 3px;
+    }
+
+    .hero-line {
+        margin: 15px;
+    }
+
+    .hero-description {
+        font-size: 17.6px;
+    }
+
+    .hero-skills {
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .hero-skills img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-picture {
+        width: 250px;
+        margin: 5px;
+    }
+
+    .greeting-gif {
+        top: 10px;
+        left: 85%;
+    }
+
+    .greeting-gif img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+    .greeting-gif {
+        top: 10px;
+        left: 75%;
+    }
+}
+
+@media (max-width: 580px) {
+    .greeting-gif {
+        top: 10px;
+        left: 78%;
+    }
+
+    .greeting-gif img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-greeting {
+        letter-spacing: 2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-skills img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    .greeting-gif {
+        top: 10px;
+        left: 80%;
+    }
+
+    .greeting-gif img {
+        width: 50px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-container {
+        width: 70%;
+        padding: 40px;
+    }
+
+    .hero-greeting {
+        font-size: 120px;
+        letter-spacing: 6px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 600px;
+    }
+
+    .hero-skills img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-picture {
+        width: 300px;
+    }
+
+    .greeting-gif {
+        top: 10px;
+        left: 500px;
+    }
+
+    .greeting-gif img {
+        width: 150px;
+    }
+
+    .profile-gif {
+        top: 50px;
+        left: 1200px;
+    }
+
+    .profile-gif img {
+        width: 200px;
+    }
+}
+
+
+
+
+  
