@@ -30,26 +30,26 @@ function Portfolio() {
                         <span className="portfolio-item-title">Expo FP Brazil</span>
                     </a>
                     <a
-                        href="https://made-by-human.web.app/"
+                        href="https://rocketlauncher-f7105.web.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
                         data-aos-delay="300"
                     >
-                        <img src="https://i.postimg.cc/k5snZ3JJ/SCR-20250511-qnwr.png" alt="Made By Human Project" />
-                        <span className="portfolio-item-title">Made By Human</span>
+                        <img src="https://i.postimg.cc/zv6WgH6c/rocket.jpg" alt="Rocket Launcher" />
+                        <span className="portfolio-item-title">Launch The Rocket</span>
                     </a>
                     <a
-                        href="https://made-by-human.web.app/"
+                        href="https://mothersday-a9e8e.web.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
                         data-aos-delay="400"
                     >
-                        <img src="https://i.postimg.cc/k5snZ3JJ/SCR-20250511-qnwr.png" alt="Made By Human Project" />
-                        <span className="portfolio-item-title">Made By Human</span>
+                        <img src="https://i.postimg.cc/8Pc0Hvmn/SCR-20250507-tkqq.png" alt="Tiny Present to my Mom" />
+                        <span className="portfolio-item-title">Tiny Present to my Mom</span>
                     </a>
                 </div>
             </div>
