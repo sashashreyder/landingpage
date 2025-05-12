@@ -1,31 +1,37 @@
-# Landing Page 
+# 🌟 Landing Page
 
-## Overview  
-This is a **responsive landing page** designed with a modern and clean UI. It showcases structured sections, smooth animations, and interactive elements to engage users.  
+## 📋 Overview  
+This is a responsive React-based portfolio landing page designed with a modern and clean UI. It showcases structured sections, smooth scroll animations, and interactive elements to engage users. It includes a downloadable CV and dynamic project portfolio.
 
 ## 🌐 Live Demo  
-🔗 [Click here to view the live page](https://sashashreyder.github.io/landingpage/)  
+🔗 [Click here to view the live page](https://sashashreyder.github.io/landingpage/)
 
 ## 🛠️ Built With  
-- **HTML5**  
-- **CSS3 (Flexbox & Grid)**  
-- **JavaScript (for interactivity)**  
+- ⚛️ React + Vite  
+- 💅 CSS3 (Flexbox & Grid)  
+- 🎯 AOS (Animate On Scroll) for scroll-based animations  
+- 📄 GitHub Pages for deployment  
 
 ## 📌 Features  
-✔️ Fully responsive design (mobile-first approach)  
-✔️ Smooth animations & transitions  
-✔️ Interactive navigation menu  
-✔️ Well-structured and maintainable code  
+- ✔️ Fully responsive design (mobile-first approach)  
+- ✔️ Smooth and professional animations  
+- ✔️ Interactive navigation and expandable story sections  
+- ✔️ Built-in resume download button  
+- ✔️ Modular, maintainable codebase with clean component structure  
 
 ## 🚀 Installation & Usage  
-If you want to run this project locally:  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/sashashreyder/landingpage.git
-   cd landingpage
-2. Open index.html in your browser
 
-📩 Contact
-💻 GitHub: sashashreyder
-📧 Email: sashashreiderbr@gmail.com
+To run the project locally:
+
+```bash
+git clone https://github.com/sashashreyder/landingpage.git
+cd landingpage
+npm install
+npm run dev
+
+
+📄 Download CV: Available directly on the site
+
+✨ Thank you for visiting my portfolio!
+— Aleksandra Shreider
 
