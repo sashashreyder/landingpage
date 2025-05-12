@@ -27,20 +27,21 @@ function HeroSection() {
           </div>
 
           <p className="hero-description">
-            I’m Sasha, a frontend developer who loves coding and learning new things every day.
-            I’m also into design, always looking for fresh ideas and keeping up with the latest trends.
-            I work well with others and believe good communication is key to any great project.
+          Specialized in building responsive, accessible interfaces with React, TypeScript, and modern CSS (Flexbox, Grid, Tailwind). 
+          Experienced with component-based architecture, GitHub Pages deployment, and backend integration using Firebase. 
+          Passionate about clean code, UI/UX, and smooth animations with AOS. Familiar with Cypress for testing. 
+          Fast learner, always designing with users in mind.
           </p>
         </div>
 
         <div className="hero-image" data-aos="fade">
-          <img
-            className="profile-picture"
-            src="src/media/1.jpg"
-            alt="Profile"
-            onMouseEnter={() => setShowProfileGif(true)}
-            onMouseLeave={() => setShowProfileGif(false)}
-          />
+         <img
+         className="profile-picture"
+         src={`${import.meta.env.BASE_URL}media/1.jpg`}
+         alt="Profile"
+         onMouseEnter={() => setShowProfileGif(true)}
+         onMouseLeave={() => setShowProfileGif(false)}
+        />
         </div>
 
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import cvFile from './media/Aleksandra Shreider CV.pdf';
 
 function Contact() {
   const handleCopy = (text) => {
@@ -72,7 +71,7 @@ function Contact() {
             data-aos-delay="500"
           >
             <a
-              href={cvFile}
+              href={`${import.meta.env.BASE_URL}media/Aleksandra%20Shreider%20CV.pdf`}
               download="Aleksandra-Shreider-CV.pdf"
               className="contact-link"
             >
@@ -88,4 +87,5 @@ function Contact() {
 }
 
 export default Contact;
+
 
