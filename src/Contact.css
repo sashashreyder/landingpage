@@ -65,6 +65,14 @@
     text-decoration: underline;
 }
 
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease;
+  }
+  
 @media (max-width: 600px) {
     .contact-heading {
         font-size: 32px;

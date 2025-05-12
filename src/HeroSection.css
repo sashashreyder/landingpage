@@ -216,31 +216,40 @@
 
 @media (max-width: 480px) {
     .hero-greeting {
-        letter-spacing: 2px;
+      letter-spacing: 2px;
     }
-
+  
     .hero-description {
-        font-size: 16px;
+      font-size: 15px;
+      padding: 0 10px;
     }
-
-    .hero-skills img {
-        width: 30px;
-        height: 30px;
+  
+    .hero-icons-divider {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 10px;
     }
-
+  
+    .hero-icons-divider img {
+      width: 28px;
+      height: 28px;
+    }
+  
     .profile-picture {
-        width: 200px;
+      width: 180px;
     }
-
+  
     .greeting-gif {
-        top: 10px;
-        left: 80%;
+      top: 10px;
+      left: 75%;
     }
-
+  
     .greeting-gif img {
-        width: 50px;
+      width: 50px;
     }
-}
+  }
+  
 
 @media (min-width: 1600px) {
     .hero-container {
@@ -285,6 +294,19 @@
     .profile-gif img {
         width: 200px;
     }
+
+    @media (max-width: 600px) {
+        .hero-icons-divider {
+          gap: 12px;
+          flex-wrap: wrap;
+          padding: 0 10px;
+        }
+      
+        .hero-icons-divider img {
+          width: 30px;
+          height: 30px;
+        }
+      }      
 }
 
 
