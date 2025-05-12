@@ -13,7 +13,6 @@ function Portfolio() {
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
-                        data-aos-delay="100"
                     >
                         <img src="https://i.postimg.cc/k5snZ3JJ/SCR-20250511-qnwr.png" alt="Made By Human Project" />
                         <span className="portfolio-item-title">Made By Human</span>
@@ -24,7 +23,7 @@ function Portfolio() {
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
-                        data-aos-delay="200"
+                        data-aos-delay="50"
                     >
                         <img src="https://i.postimg.cc/J0Vdtg5y/Expo.png" alt="Expo FP Brazil Project" />
                         <span className="portfolio-item-title">Expo FP Brazil</span>
@@ -35,7 +34,7 @@ function Portfolio() {
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay="50"
                     >
                         <img src="https://i.postimg.cc/zv6WgH6c/rocket.jpg" alt="Rocket Launcher" />
                         <span className="portfolio-item-title">Launch The Rocket</span>
@@ -46,7 +45,7 @@ function Portfolio() {
                         rel="noopener noreferrer"
                         className="portfolio-item"
                         data-aos="fade-up"
-                        data-aos-delay="400"
+                        data-aos-delay="50"
                     >
                         <img src="https://i.postimg.cc/8Pc0Hvmn/SCR-20250507-tkqq.png" alt="Tiny Present to my Mom" />
                         <span className="portfolio-item-title">Tiny Present to my Mom</span>

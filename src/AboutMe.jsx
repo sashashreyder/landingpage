@@ -85,7 +85,7 @@ function AboutMe() {
                     </div>
                 </div>
 
-                <div className="skip-button-wrapper" data-aos="zoom-in" data-aos-delay="200">
+                <div className="skip-button-wrapper" data-aos="zoom-in">
                     <button className="skip-story-button" onClick={scrollToNextSection}>
                         Skip My Story 🥺
                     </button>
@@ -99,7 +99,6 @@ function AboutMe() {
                                 id={section.id}
                                 {...(!isFirst && {
                                     'data-aos': 'fade-up',
-                                    'data-aos-delay': index * 150,
                                 })}
                                 className={`about-content-box ${section.imageClass.includes("right") ? "reverse-layout" : ""} ${
                                     !isMobileView && expandedSections[index] ? "expanded" : ""

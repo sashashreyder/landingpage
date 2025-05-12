@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import cvFile from './media/Aleksandra Shreider CV.pdf';
 
 function Contact() {
   const handleCopy = (text) => {
@@ -71,8 +72,8 @@ function Contact() {
             data-aos-delay="500"
           >
             <a
-              href="/cv.svg"
-              download
+              href={cvFile}
+              download="Aleksandra-Shreider-CV.pdf"
               className="contact-link"
             >
               <i className="contact-icon fas fa-file-download"></i>
