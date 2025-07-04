@@ -13,6 +13,7 @@ function Contact() {
         <h1 className="contact-heading">Contact Me</h1>
         <div className="contact-list">
 
+          {/* Email */}
           <div
             className="contact-item"
             onClick={() => handleCopy('sashashreiderbr@gmail.com')}
@@ -23,6 +24,7 @@ function Contact() {
             <span className="contact-text">sashashreiderbr@gmail.com</span>
           </div>
 
+          {/* Phone */}
           <div
             className="contact-item"
             onClick={() => handleCopy('+55 (11) 96965-2319')}
@@ -33,6 +35,7 @@ function Contact() {
             <span className="contact-text">+55 (11) 96965-2319</span>
           </div>
 
+          {/* LinkedIn */}
           <div
             className="contact-item"
             data-aos="fade-up"
@@ -49,6 +52,7 @@ function Contact() {
             </a>
           </div>
 
+          {/* GitHub */}
           <div
             className="contact-item"
             data-aos="fade-up"
@@ -65,13 +69,14 @@ function Contact() {
             </a>
           </div>
 
+          {/* Download CV */}
           <div
             className="contact-item"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             <a
-              href={`${import.meta.env.BASE_URL}media/Aleksandra%20Shreider%20CV.pdf`}
+              href={`${import.meta.env.BASE_URL}media/CV%20July%20Aleksandra%20Shreider.pdf`}
               download="Aleksandra-Shreider-CV.pdf"
               className="contact-link"
             >
