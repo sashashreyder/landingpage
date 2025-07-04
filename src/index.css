@@ -1,4 +1,4 @@
-body, .navbar, p {
+body, .navbar {
   font-family: 'Italiana', serif;
   }
   
@@ -7,3 +7,4 @@ body, .navbar, p {
     font-weight: 400;
     font-style: normal;
   }
+

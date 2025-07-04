@@ -6,6 +6,12 @@
     margin-top: 20px;
 }
 
+.about-content-text p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 150%;
+    letter-spacing: -0.25px;
+  }
+
 .skip-button-wrapper {
     display: flex;
     justify-content: center;
