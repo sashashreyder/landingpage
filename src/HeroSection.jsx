@@ -27,10 +27,9 @@ function HeroSection() {
           </div>
 
           <p className="hero-description">
-          Specialized in building responsive, accessible interfaces with React, TypeScript, and modern CSS (Flexbox, Grid, Tailwind). 
-          Experienced with component-based architecture, GitHub Pages deployment, and backend integration using Firebase. 
-          Passionate about clean code, UI/UX, and smooth animations with AOS. Familiar with Cypress for testing. 
-          Fast learner, always designing with users in mind.
+          I build responsive, accessible interfaces using React, TypeScript, and modern CSS (Flexbox, Grid, Tailwind). I work confidently with component-based architecture, Git workflows, and deploy projects via Netlify, GitHub Pages, and Firebase Hosting.
+          I’ve also customized WordPress and Moodle environments, adapting layouts and styles to match design systems. My code is clean, maintainable, and focused on usability and performance.
+          I enjoy adding meaningful UI interactions and animations with AOS and CSS. I’ve used Cypress for basic end-to-end testing and I’m always exploring better tools and workflows to improve the developer and user experience.
           </p>
         </div>
 

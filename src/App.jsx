@@ -17,7 +17,7 @@ function App() {
       duration: 700,
       once: true,
       easing: 'ease-out',
-      offset: 120,
+      offset: 0,
     });
   }, []);
 
