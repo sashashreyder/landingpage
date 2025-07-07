@@ -17,7 +17,7 @@ import AOS from "aos"
 function App() {
 	useEffect(() => {
 		AOS.init({
-			duration: 700,
+			duration: 600,
 			once: true,
 			easing: "ease-out",
 			offset: 0,
