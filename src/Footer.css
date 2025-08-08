@@ -1,0 +1,13 @@
+#footer-container {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.762);
+}
