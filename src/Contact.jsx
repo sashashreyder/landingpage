@@ -76,7 +76,7 @@ function Contact() {
             data-aos-delay="500"
           >
             <a
-              href={`${import.meta.env.BASE_URL}media/CV%20July%20Aleksandra%20Shreider.pdf`}
+              href={`${import.meta.env.BASE_URL}media/Aleksandra Shreider CV 08:2025.pdf`}
               download="Aleksandra-Shreider-CV.pdf"
               className="contact-link"
             >
